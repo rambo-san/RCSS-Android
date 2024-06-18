@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFD5D5"
+    tools:context=".HomePage">
+
+    <LinearLayout
+        android:layout_width="478dp"
+        android:layout_height="1038dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="102dp"
+            android:background="#BA4242"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="159dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/audiowide"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="25dp"
+                android:text="HOME"
+                android:textColor="#F8F8F8"
+                android:textSize="34sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp" >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="316dp"
+                    android:backgroundTintMode="add"
+                    android:cropToPadding="true"
+                    android:fadeScrollbars="true"
+                    android:foregroundTint="#BF3131"
+                    android:tintMode="screen"
+                    app:srcCompat="@drawable/sandip_karangiya_jbhjxi2vi5q_unsplash"
+                    app:tint="#803636" />
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="342dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="49dp"
+                android:layout_marginTop="44dp"
+                android:fontFamily="@font/bungee"
+                android:text="Hello Viewer"
+                android:textColor="#451111"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="372dp"
+                android:layout_height="201dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="58dp"
+                android:layout_marginBottom="33dp"
+                android:fontFamily="cursive"
+                android:text="@string/lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industry_s_standard_dummy_text_ever_since_the_1500s_when_an_unknown_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_type_specimen_book_it_has_survived_not_only_five_centuries_but_also_the_leap_into_electronic_typesetting_remaining_essentially_unchanged_it_was_popularised_in_the_1960s_with_the_release_of_letraset_sheets_containing_lorem_ipsum_passage"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="124dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="#E3B9B9">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginEnd="41dp"
+                    android:layout_marginBottom="37dp"
+                    android:fontFamily="@font/bungee"
+                    android:text="HOME"
+                    android:textColor="#911010" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="#E3B9B9">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="41dp"
+                    android:layout_marginBottom="37dp"
+                    android:fontFamily="@font/bungee"
+                    android:text="@string/op1"
+                    android:textColor="#911010" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="#E3B9B9">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="41dp"
+                    android:layout_marginBottom="37dp"
+                    android:fontFamily="@font/bungee"
+                    android:text="@string/op2"
+                    android:textColor="#911010" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="126dp"
+                android:layout_height="match_parent"
+                android:background="#E3B9B9">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="79dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="41dp"
+                    android:layout_marginBottom="37dp"
+                    android:fontFamily="@font/bungee"
+                    android:text="@string/op5"
+                    android:textColor="#911010" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
