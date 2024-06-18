@@ -2,4 +2,9 @@
     <string name="app_name">Fragmentify</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="temp_text">TEMP TEXT</string>
+    <string name="temp_text_2">TEMP TEXT 2</string>
+    <string name="hello_are_you_lost_my_child">HELLO, Are You lost my child!</string>
+    <string name="me_too">ME too!</string>
+    <string name="help_me">HELP ME</string>
 </resources>

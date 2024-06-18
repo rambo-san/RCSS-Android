@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
+    tools:context=".MainActivity2">
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView10"
         android:name="com.example.fragmentify.FirstFrag"
@@ -27,4 +26,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fragmentContainerView10"
         tools:layout="@layout/fragment_second" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
