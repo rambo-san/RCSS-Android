@@ -19,4 +19,10 @@
     <string name="op1">OP1</string>
     <string name="op2">OP2</string>
     <string name="op5">op5</string>
+    <string name="passwordd">Password</string>
+    <string name="loginn">LOGIN</string>
+    <string name="welcome">WELCOME!</string>
+    <string name="email">Email</string>
+    <string name="enter_passwordd">Enter Password</string>
+    <string name="loginnn">LOGIN</string>
 </resources>
