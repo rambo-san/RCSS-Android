@@ -29,7 +29,7 @@
             android:layout_gravity="center"
             android:fontFamily="@font/asul"
             android:gravity="center"
-            android:text="WELCOME!"
+            android:text="@string/welcome"
             android:textColor="#FFFFFF"
             android:textSize="48sp" />
 
@@ -44,7 +44,7 @@
             android:layout_gravity="center"
             android:fontFamily="@font/alatsi"
             android:gravity="center"
-            android:text="LOGIN"
+            android:text="@string/loginn"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
 
@@ -72,13 +72,13 @@
                     android:fontFamily="@font/alata"
                     android:gravity="center|left"
                     android:paddingHorizontal="20px"
-                    android:text="Email"
+                    android:text="@string/email"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editTextTextPassword"
+                    android:id="@+id/editEmail"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -89,7 +89,7 @@
                     android:fontFamily="@font/alata"
                     android:hint="@string/enter_email"
                     android:inputType="textEmailAddress"
-                    android:paddingHorizontal="30px"
+                    android:paddingHorizontal="30dp"
                     android:textColorHint="#590C0C"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -106,10 +106,12 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:autofillHints=""
                     android:fontFamily="@font/alata"
                     android:gravity="center|left"
+                    android:importantForAutofill="no"
                     android:paddingHorizontal="20px"
-                    android:text="Password"
+                    android:text="@string/passwordd"
                     android:textColor="#FFFFFF"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -124,9 +126,9 @@
                     android:backgroundTint="#FBABAB"
                     android:ems="10"
                     android:fontFamily="@font/alata"
-                    android:hint="Enter Password"
+                    android:hint="@string/enter_passwordd"
                     android:inputType="textPassword"
-                    android:paddingHorizontal="30px"
+                    android:paddingHorizontal="30dp"
                     android:textColorHint="#590C0C"
                     android:textSize="14sp" />
             </LinearLayout>
@@ -163,7 +165,7 @@
                         android:id="@+id/button7"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="LOGIN" />
+                        android:text="@string/loginnn" />
 
                 </TableRow>
 
@@ -171,5 +173,25 @@
 
 
         </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="167dp"
+                android:layout_height="126dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="41dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="127dp"
+                app:srcCompat="@drawable/gun" />
+        </RelativeLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
