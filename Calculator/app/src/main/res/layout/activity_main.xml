@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4E3F3F"
+    android:background="#120D0D"
     android:foregroundGravity="center_vertical">
 
     <TextView
         android:id="@+id/tvDisplay"
-        android:layout_width="369dp"
-        android:layout_height="152dp"
+        android:layout_width="457dp"
+        android:layout_height="140dp"
         android:layout_margin="16dp"
         android:layout_marginTop="28dp"
         android:background="#2F2727"
@@ -27,8 +26,8 @@
 
     <GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="387dp"
-        android:layout_height="375dp"
+        android:layout_width="472dp"
+        android:layout_height="402dp"
         android:layout_marginTop="16dp"
         android:alignmentMode="alignMargins"
         android:columnCount="4"

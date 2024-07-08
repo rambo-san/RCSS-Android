@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/wallhaven_mpm1lk_3840x2400"
+    android:background="#7E1D1D"
     android:outlineAmbientShadowColor="#FFFFFF"
     tools:context=".MainActivity">
 
@@ -176,7 +176,20 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="237dp"
+                android:layout_height="140dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="66dp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginBottom="87dp"
+                app:srcCompat="@drawable/gun" />
+        </RelativeLayout>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
