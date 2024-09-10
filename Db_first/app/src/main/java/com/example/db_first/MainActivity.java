@@ -70,6 +70,18 @@ private DBHandler dbHandler;
         }
     }
     public void updateStudent(View v){
+        String name=e1.getText().toString();
+        String course=e2.getText().toString();
+        int semester=Integer.parseInt(e3.getText().toString());
+        if(dbHandler.updateStudent(name,course,semester)){
+            Toast.makeText(MainActivity.this,"Student Updated successfully",Toast.LENGTH_LONG).show();
+        }
+        else {
+            Toast.makeText(MainActivity.this,"Student not found!",Toast.LENGTH_LONG).show();
 
+        }
+        e1.setText("");
+        e2.setText("");
+        e3.setText("");
     }
 }

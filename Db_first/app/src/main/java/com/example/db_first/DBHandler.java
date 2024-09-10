@@ -66,4 +66,24 @@ public class DBHandler extends SQLiteOpenHelper{
         }
         return result;
     }
+    public  boolean updateStudent(String name, String course, int semester){
+        SQLiteDatabase db=this.getWritableDatabase();
+
+        Cursor cursor=db.rawQuery( "Select * from "+TABLE_NAME+" where "+NAME+"=?",new String[]{name});
+        Student student= new Student();ContentValues values=new ContentValues();
+
+        values.put(NAME,name);
+        values.put(COURSE,course);
+        values.put(SEMESTER,semester);
+        if(cursor.moveToFirst()){
+            cursor.moveToFirst();
+            student.setId(Integer.parseInt(cursor.getString(0)));
+            db.update(TABLE_NAME, values, ID + "=?", new String[]{String.valueOf(student.getId())});
+            cursor.close();
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
