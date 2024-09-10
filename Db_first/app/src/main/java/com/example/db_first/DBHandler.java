@@ -35,4 +35,35 @@ public class DBHandler extends SQLiteOpenHelper{
         db.insert(TABLE_NAME,null,values);
         //db.close();
     }
+    public Student searchStudent(String name){
+        SQLiteDatabase db=this.getWritableDatabase();
+        Cursor cursor=db.rawQuery( "Select * from "+TABLE_NAME+" where "+NAME+"=?",new String[]{name});
+        Student student=new Student();
+        if(cursor.moveToFirst()){
+            cursor.moveToFirst();
+            student.setId(Integer.parseInt(cursor.getString(0)));
+            student.setName(cursor.getString(1));
+            student.setCourse(cursor.getString(2));
+            student.setSemester(Integer.parseInt(cursor.getString(3)));
+            cursor.close();
+        }
+        else {
+            student=null;
+        }
+        return student;
+    }
+    public boolean deleteStudenT(String name){
+        boolean result=false;
+        SQLiteDatabase db=this.getWritableDatabase();
+        Cursor cursor=db.rawQuery( "Select * from "+TABLE_NAME+" where "+NAME+"=?",new String[]{name});
+        Student student= new Student();
+        if(cursor.moveToFirst()){
+            cursor.moveToFirst();
+            student.setId(Integer.parseInt(cursor.getString(0)));
+            db.delete(TABLE_NAME,ID+ "=?",new String[]{String.valueOf(student.getId())});
+            cursor.close();
+            result=true;
+        }
+        return result;
+    }
 }

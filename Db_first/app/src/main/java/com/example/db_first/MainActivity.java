@@ -42,4 +42,34 @@ private DBHandler dbHandler;
         e3.setText("");
 
     }
+    public void findStudent(View v){
+        String name=e1.getText().toString();
+        Student student=dbHandler.searchStudent(name);
+        if(student!=null){
+            e2.setText(String.valueOf(student.getCourse()));
+            e3.setText((String.valueOf(student.getSemester())));
+        }
+        else{
+            Toast.makeText(MainActivity.this,"Student not found!",Toast.LENGTH_LONG).show();
+        }
+    }
+    public void deleteStudent(View v){
+        String name=e1.getText().toString();
+        if(dbHandler.deleteStudenT(name)){
+            Toast.makeText(MainActivity.this,"Student Deleted",Toast.LENGTH_LONG).show();
+            e1.setText("");
+            e2.setText("");
+            e3.setText("");
+
+        }
+        else{
+            Toast.makeText(MainActivity.this,"Student not found!",Toast.LENGTH_LONG).show();
+            e1.setText("");
+            e2.setText("");
+            e3.setText("");
+        }
+    }
+    public void updateStudent(View v){
+
+    }
 }

@@ -8,6 +8,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="478dp"
         android:layout_height="509dp"
         android:orientation="vertical"
@@ -88,6 +89,36 @@
             android:onClick="addStudent"
             android:text="Add Student" />
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="440dp"
+        android:layout_height="435dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="findStudent"
+            android:text="Find A Student by Name" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="deleteStudent"
+            android:text="Delete a Student" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update a Student" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

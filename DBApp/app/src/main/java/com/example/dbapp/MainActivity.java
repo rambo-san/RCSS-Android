@@ -1,14 +1,17 @@
-package com.example.services;
+package com.example.dbapp;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.database.Cursor;
+import android.content.ContentValues;
+import android.content.Context;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,24 +26,4 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
-    public void startMedia(View v){
-        Intent i=new Intent(MainActivity.this,MediaService.class);
-        i.setAction("START");
-        startService(i);
-    }
-    public void stopMedia(View v){
-    Intent i=new Intent(MainActivity.this,MediaService.class);
-    stopService(i);
-    }
-    public void pauseMedia(View v){
-        Intent i=new Intent(MainActivity.this,MediaService.class);
-        i.setAction("PAUSE");
-        startService(i);
-    }
-    public void resumeMedia(View v){
-        Intent i=new Intent(MainActivity.this,MediaService.class);
-        i.setAction("RESUME");
-        startService(i);
-    }
-
 }
